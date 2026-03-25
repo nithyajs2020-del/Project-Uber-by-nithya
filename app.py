@@ -195,7 +195,7 @@ with col2:
     if st.button('Predict Fare'):
         # Calculate distance
         distance = haversine_distance(pickup_latitude, pickup_longitude, dropoff_latitude, dropoff_longitude)
-        st.write(f"Calculated Distance: {distance:.2f} miles")
+        st.write(f"Calculated Distance: {distance:.2f} km")
 
         # Determine is_weekend
         is_weekend = 1 if day_of_week >= 5 else 0
