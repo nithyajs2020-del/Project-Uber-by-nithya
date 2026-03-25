@@ -253,6 +253,4 @@ with col2:
         st.success(f"Predicted Fare Amount: ${predicted_fare[0][0]:.2f}")
 
 st.markdown("### Note on Inputs:")
-st.markdown("- **Map Selection**: Click on the map to set pickup and dropoff locations alternatively. The current selection mode is displayed.")
-st.markdown("- **Day of Week**: 0=Monday, 6=Sunday.")
-st.markdown("- **Passenger Count**: Determines 'Uber Go' or 'Uber XL' (XL for >4 passengers).")
+st.markdown("- **Map Selection**: Select a handle and click anywhere on the map to set pickup and dropoff locations alternatively. The current selection mode is displayed.")
