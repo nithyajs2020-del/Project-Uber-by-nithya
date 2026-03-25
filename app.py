@@ -168,9 +168,7 @@ with col1:
             st.session_state['selection_mode'] = 'pickup' # Switch back to pickup mode
 
     st.write(f"Current selection mode: **{st.session_state['selection_mode'].capitalize()}**")
-    st.write(f"Pickup: Lat {st.session_state['pickup_coords'][0]:.6f}, Lon {st.session_state['pickup_coords'][1]:.6f}")
-    st.write(f"Dropoff: Lat {st.session_state['dropoff_coords'][0]:.6f}, Lon {st.session_state['dropoff_coords'][1]:.6f}")
-
+   
 pickup_latitude = st.session_state['pickup_coords'][0]
 pickup_longitude = st.session_state['pickup_coords'][1]
 dropoff_latitude = st.session_state['dropoff_coords'][0]
@@ -253,4 +251,4 @@ with col2:
         st.success(f"Predicted Fare Amount: ${predicted_fare[0][0]:.2f}")
 
 st.markdown("### Note on Inputs:")
-st.markdown("- **Map Selection**: Select a handle and click anywhere on the map to set pickup and dropoff locations alternatively. The current selection mode is displayed.")
+st.markdown("- **Map Selection**: Select a handle and click anywhere on the map two times to set pickup and dropoff locations alternatively. The current selection mode is displayed.")
